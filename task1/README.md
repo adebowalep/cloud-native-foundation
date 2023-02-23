@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html>
+<body>
 	<h1>Flask Application with /status and /metrics endpoints</h1>
 	<p>This is a basic Flask application that has been extended with two additional endpoints /status and /metrics.</p>
 	<h2>Prerequisites</h2>
@@ -35,4 +37,5 @@ $ pip install -r requirements.txt</code></pre>
 }</code></pre>
 	<h3>/</h3>
 	<p>This is the default endpoint that returns the message "Hello World!"</p>
-
+</body>
+</html>
