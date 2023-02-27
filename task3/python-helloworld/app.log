@@ -1,0 +1,45 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.188.159.228:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Status request successful
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:30:22] "GET /status HTTP/1.1" 200 -
+INFO:app:Status request successful
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:30:23] "GET /status HTTP/1.1" 200 -
+INFO:app:Status request successful
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:30:25] "GET /status HTTP/1.1" 200 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/Users/suleimanadebowaleojo/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/suleimanadebowaleojo/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/suleimanadebowaleojo/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/suleimanadebowaleojo/opt/anaconda3/lib/python3.9/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/suleimanadebowaleojo/Desktop/PYTHORCH/Udacity /Project to gits/cloud-native-tooling/task2/python-helloworld/app.py", line 27, in metrics
+    logging.info(f"{datetime.datetime.now()}, {endpoint_name} endpoint was reached")
+NameError: name 'datetime' is not defined
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:30:38] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.188.159.228:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Metrics request succesfull
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:41:34] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Status request successful
+INFO:werkzeug:10.188.159.228 - - [23/Feb/2023 15:41:57] "GET /status HTTP/1.1" 200 -
+2023-02-23 15:46:53,[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.188.159.228:5000
+2023-02-23 15:46:53,[33mPress CTRL+C to quit[0m
+2023-02-23 15:46:59,Status request successful
+2023-02-23 15:46:59,10.188.159.228 - - [23/Feb/2023 15:46:59] "GET /status HTTP/1.1" 200 -
+2023-02-23 15:47:00,Status request successful
+2023-02-23 15:47:00,10.188.159.228 - - [23/Feb/2023 15:47:00] "GET /status HTTP/1.1" 200 -
+2023-02-23 15:47:05,Main request successful
+2023-02-23 15:47:05,10.188.159.228 - - [23/Feb/2023 15:47:05] "GET / HTTP/1.1" 200 -
